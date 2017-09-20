@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Love To Clean</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(" .navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 80
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})</script>
+
+	<body>
+		<!-- Nav-bar Class Beginning -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container ">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand " href="#myPage"><img src= "images/newLogo.png" alt="Love To Clean"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#home">HOME</a></li>
+						<li><a href="#services">SERVICES</a></li>
+						<li><a href="#whyus">WHY US</a></li>
+						<li><a href="#contactus">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div> <!--container class end -->
+		</nav>
+		<!-- Nav-bar Class End -->
+
+		<!-- Jumbotron Class background overlay (bg-overlay) -->
+		<div id="home" class="jumbotron" >
+
+			<div class=" container bg-overlay" text-align="center">
+						
+						<h1>Professional House & Commercial Cleaning</h1>
+						<h1>Love to Clean <button type="button" id="btn-enquire" class="btn-info btn" onClick="document.getElementById('contactus').scrollIntoView();">Enquire Now</button></h1>
+						<h3>
+							We clean with care.
+						</h3>
+<!-- 						<div class="row">
+						<div class="container company">
+							<div class="col-lg-6 col-lg-push-2 col-md-push-3 hidden-sm hidden-xs col-md-6">
+								<img class="company-logo" src="images/logoico.png" alt="icon">
+							</div>
+							<div class="col-lg-4 col-md-12 col-sm-12">
+								<h2>some text</h2>
+							</div>
+							</div>
+						</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- Jumbotron class class end -->
+
+
+		<!-- Our Services class start -->
+		<div  class="container service-us-background">
+			<div class="row">
+				<div id="services" class="container our-services-header">
+					<h1> Our Services</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat, dui eu rutrum bibendum, nisl mauris fermentum tellus, nec tempor massa nisi sed dolor. Morbi condimentum libero nunc, sit amet mattis arcu fringilla in. Nam ullamcorper magna ut ex aliquet, id viverra odio volutpat. Maecenas mollis tellus nec lacus rhoncus dapibus vitae eget risus. Sed interdum rhoncus risus eu viverra. Integer non nunc hendrerit, ultricies nibh dapibus, varius risus. Phasellus ornare magna sit amet ultricies pellentesque. Sed sed lorem aliquet, euismod ex non, laoreet justo. Nullam at enim eu ipsum tincidunt feugiat at a ante. Donec quis nunc maximus, euismod quam sed, rhoncus justo. Sed eu scelerisque risus, nec suscipit erat. Curabitur a rutrum lectus, et tempus nulla. Etiam dapibus volutpat erat, vel pharetra est tincidunt efficitur. Nulla eget massa auctor, luctus erat eget, mattis augue. Integer lorem orci, dapibus eget lorem in, ultrices molestie turpis</p>
+
+					<!-- First Child Commercial Cleaning Start -->
+					<div clas="container commercial-header">
+						<h3>Commercial Cleaning</h3>
+					</div>
+					<div class="container cleaning-header">
+						<div class="row">
+							<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+								<img class="service-icon" src="images/officeico.jpg" alt="icon">
+							</div>
+							<div class="col-lg-7 col-md-12">
+								<p>Cras imperdiet vestibulum mauris, vitae scelerisque libero fermentum sed. Praesent condimentum mollis tortor, sit amet tincidunt ex pharetra ut. . </p>
+							</div>
+							<div class="cleaning-button col-lg-2 col-md-12">
+								<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#commercial-addon">Learn More</button>
+							</div>
+							<div id="commercial-addon" class="col-lg-7 col-md-12 collapse">
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+							</div>
+						</div>
+					</div>
+					<!-- Commercial Cleaning End -->
+
+					<!-- Residential Class Second Child Start -->
+					<div clas="container residential-header">
+						<h3>Residential Cleaning</h3>
+					</div>
+					<div class="container cleaning-header">
+						<div class="row">
+							<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+								<img class="service-icon" src="images/houseico.jpg" alt="icon">
+							</div>
+							<div class="col-lg-7 col-md-12">
+								<p>Cras imperdiet vestibulum mauris, vitae scelerisque libero fermentum sed. Praesent condimentum mollis tortor, sit amet tincidunt ex pharetra ut. Sed mollis aliquet arcu, vitae ornare mi dictum nec. Nam ut nibh ut dolor pretium convallis. Etiam at semper augue, nec scelerisque enim.  </p>
+							</div>
+							<div class="cleaning-button col-lg-2 col-md-12">
+								<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#residential-addon">Learn More</button>
+							</div>
+							<div id="residential-addon" class="col-lg-7 col-md-12 collapse">
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Residential Class End -->
+
+					<!-- Other Class Third Child Start -->
+					<div clas="container Others">
+						<h3>Others</h3>
+					</div>
+					<div class="container cleaning-header">
+						<div class="row">
+							<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+								<img class="service-icon" src="images/aptico.jpeg" alt="icon">
+							</div>
+							<div class="col-lg-7 col-md-12">
+								<p>Cras imperdiet vestibulum mauris, vitae scelerisque libero fermentum sed. Praesent condimentum mollis tortor, sit amet tincidunt ex pharetra ut. Sed mollis aliquet arcu, vitae ornare mi dictum nec. Nam ut nibh ut dolor pretium convallis. Etiam at semper augue, nec scelerisque enim. Pellentesque tincidunt, tortor vitae blandit tempor, ligula tortor cursus enim, eu pharetra elit turpis ac nisl.  </p>
+							</div>
+							<div class="cleaning-button col-lg-2 col-md-12">
+								<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#others-addon">Learn More</button>
+							</div>
+							<div id="others-addon" class="col-lg-7 col-md-12 collapse">
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Other Class End -->
+
+					<div class="container cleaning-duties">
+						<div class="row">
+							<div class="col-sm-12 col-md-12">
+								<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#guide-addon">Love To Clean Cleaning Guide</button>
+							</div>
+							<div class="row">
+								<div id="guide-addon" class="container cleaning-guide collapse">
+									<div class="col-lg-3 col-sm-6 col-md-3">
+										<h4>Bedroom</h4>
+										<ul class="list-group">
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+										</ul>
+									</div>
+									<div class="col-lg-3 col-sm-6 col-md-3">
+										<h4>Kitchen</h4>
+										<ul class="list-group">
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+										</ul>
+									</div>
+									<div class="col-lg-3 col-sm-6 col-md-3">
+										<h4>Bathroom</h4>
+										<ul class="list-group">
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+											<li class="list-group-item">Sample Text Here</li>
+										</ul>
+									</div>
+									<div class="col-lg-3 col-sm-6 col-md-3">
+										<h4>Office</h4>
+										<ul class="list-group">
+											<li class="list-group-item">Pictures</li>
+											<li class="list-group-item">Documents</li>
+											<li class="list-group-item">Music</li>
+											<li class="list-group-item">Videos</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Our Service  end -->
+
+	
+		</footer>
+</body>
+</html>
